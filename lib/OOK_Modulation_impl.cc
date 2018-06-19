@@ -59,6 +59,10 @@ namespace gr {
       const float *in = (const float *) input_items[0];
       float *out = (float *) output_items[0];
 
+	int i=0;
+	int j=0;
+	int ctr=0;
+
 	while(i < noutput_items) {  
 		if (in[j] < 0.5)		// j is for input
 			{ out[i++] = 2;		// i is for output

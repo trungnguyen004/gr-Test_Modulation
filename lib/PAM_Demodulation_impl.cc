@@ -67,19 +67,19 @@ namespace gr {
 		if (in[j] < 0.3)
 			{ out[i=2*j] = 0;
 			  out[i=2*j+1] = 0;
-			  j=j+2;}
+			  j=j+1;}
 		if (in[j] > 0.7 and in[j] < 1.3)
 			{ out[i=2*j] = 0;
 			  out[i=2*j+1] = 1;
-			  j=j+2;}
+			  j=j+1;}
 		if (in[j] >1.7 and in[j] < 2.3)
 			{ out[i=2*j] = 1;
 			  out[i=2*j+1] = 0;
-			  j=j+2;}
+			  j=j+1;}
 		if (in[j] > 2.7)
 			{ out[i=2*j] = 1;
 			  out[i=2*j+1] = 1;
-			  j=j+2;}
+			  j=j+1;}
 				 }
 
 		

@@ -32,8 +32,8 @@ class qa_PAM_Demodulation (gr_unittest.TestCase):
         self.tb = None
 
     def test_001_t (self):
-        src_data = (0,1,0,1)
-	expected_result = (0,0,0,1,0,0,0,1)
+        src_data = (2,3,2,1)
+	expected_result = (1,0,1,1,1,0,0,1)
 
 	src = blocks.vector_source_f(src_data)
         blk = Test_Modulation.PAM_Demodulation()

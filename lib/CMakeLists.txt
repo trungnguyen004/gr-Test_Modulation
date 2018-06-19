@@ -30,6 +30,7 @@ list(APPEND Test_Modulation_sources
     PAM_Modulation_impl.cc
     OOK_Modulation_impl.cc
     OOK_Demodulation_impl.cc
+    PAM_Demodulation_impl.cc
 )
 
 set(Test_Modulation_sources "${Test_Modulation_sources}" PARENT_SCOPE)
